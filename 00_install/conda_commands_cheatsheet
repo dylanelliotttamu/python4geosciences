@@ -1,0 +1,32 @@
+# list environment
+
+conda env list
+
+# create environment from yml file
+conda env create -f your_env_name.yml
+
+# create environment from scratch
+conda create -n your_env_name python=3.8 # this also specifies the Python version
+
+# activate environment
+
+For conda versions on 4.6 and later, type:
+
+Windows: conda activate your_env_name
+
+macOS and Linux: conda activate your_env_name
+
+For conda versions prior to 4.6, type:
+
+Windows: activate your_env_name
+
+macOS and Linux: source activate your_env_name
+
+# after entering your environment, load jupyter notebook
+jupyter notebook
+
+# deactivate environment
+conda deactivate
+
+# delete environment
+conda remove --name your_env_name --all
